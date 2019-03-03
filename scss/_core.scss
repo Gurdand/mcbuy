@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: 'Avenir Next Cyr';
+    font-size: 16px;
+    height: 100%;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content {
+    flex: 1 0 auto;
+}
+
+.wrap {
+    min-width: 320px;
+    max-width: 1356px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+p, input, label, a, textarea {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    p, input, label, a, textarea {
+        font-size: 11px;
+        line-height: 15px;
+    }
+}

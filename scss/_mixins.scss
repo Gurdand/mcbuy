@@ -1,0 +1,16 @@
+// Шрифты
+
+
+//Avenir
+
+@mixin font($pref) {
+    @font-face {
+        font-family: 'Avenir Next Cyr '+$pref;
+        src: url('../fonts/AvenirNextCyr-'+ $pref +'.eot');
+        src: url('../fonts/AvenirNextCyr-'+ $pref +'.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextCyr-'+ $pref +'.woff') format('woff'),
+        url('../fonts/AvenirNextCyr-'+ $pref +'.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+}

@@ -1,0 +1,18 @@
+.top-banner {
+    padding: 30px 0;
+
+    .top-banner__wrap {
+
+        //max-width: 100%;
+        //min-height: 650px;
+
+        img {
+            //display: block;
+            max-width: 100%;
+            height: auto;
+            min-height: 300px;
+            object-fit: cover;
+        }
+    }
+
+}

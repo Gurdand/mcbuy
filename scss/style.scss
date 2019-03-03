@@ -1,0 +1,11 @@
+@import "./reset";
+@import "./variables";
+//@import "./mixins";
+//@import "./fonts";
+@import "./core";
+
+@import "./blocks/top.scss";
+@import "./blocks/header.scss";
+@import "./blocks/menu.scss";
+
+@import "./blocks/footer.scss";

@@ -1,0 +1,21 @@
+// @font-face {
+// 	font-family: "Samplinal";
+// 	font-style: normal;
+// 	font-weight: 500;
+// 	src: url("fonts/Samplinal.eot?") format("eot"),
+// 	     url("fonts/Samplinal.woff2") format("woff2"),
+// 	     url("fonts/Samplinal.woff") format("woff");
+// }
+
+// @font-face {
+//     font-family: 'Avenir Next Cyr Heavy';
+//     src: url('AvenirNextCyr-Heavy.eot');
+//     src: url('AvenirNextCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+//     url('AvenirNextCyr-Heavy.woff') format('woff'),
+//     url('AvenirNextCyr-Heavy.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+@include font('Bold');
