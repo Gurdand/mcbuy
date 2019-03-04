@@ -37,12 +37,14 @@ h1 {
     font-size: 48px;
     line-height: 58px;
     font-weight: 500;
+    color: $text;
 }
 
 h2 {
     font-size: 30px;
     line-height: 36px;
     font-weight: normal;
+    color: $text;
 }
 
 p, input, label, a, textarea {
