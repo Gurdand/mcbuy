@@ -110,6 +110,8 @@
     .menu {
         position: absolute;
         left: -100%;
+        transition-duration: 0.5s;
+        transition-property: left;
 
         .menu__topmenu {
             position: relative;
@@ -163,6 +165,8 @@
 
     .visible-menu {
         left: 0;
+        transition-duration: 0.5s;
+        transition-property: left;
     }
 
 }

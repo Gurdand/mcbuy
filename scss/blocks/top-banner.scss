@@ -16,3 +16,12 @@
     }
 
 }
+
+@media screen and (max-width: 480px) {
+    .top-banner {
+
+        .top-banner__wrap {
+            padding: 0;
+        }
+    }
+}
