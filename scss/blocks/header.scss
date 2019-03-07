@@ -51,6 +51,8 @@
         min-width: 22px;
 
         img {
+            position: relative;
+            z-index: -1;
             filter: invert(1);
             max-width: 100%;
             height: auto;
@@ -67,6 +69,7 @@
             max-width: 24px;
             margin-left: 5px;
             margin-right: 10px;
+            cursor: pointer;
 
             img {
                 max-width: 100%;

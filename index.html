@@ -14,6 +14,9 @@
 <body>
   <div class="container">
     <div class="page-content">
+
+      <!--------- HEADER -------------->
+
       <div class="top">
         <div class="top__wrap wrap">
           <div class="top__elem">
@@ -34,11 +37,48 @@
             </figure>
             <p class="top__call"><span>8 800 555 2748</span> <span>8 800 555 2748</span></p>
           </div>
-          <div class="top__elem">
+          <div class="top__elem account">
             <figure>
               <img src="images/user.png" alt="user">
             </figure>
             <p>Вход/Регистрация</p>
+          </div>
+        </div>
+      </div>
+      <div class="account-modal">
+        <div class="wrap">
+          <div class="account-modal__login" >
+            <form action="#">
+              <input type="text" name="login" placeholder="Логин">
+              <input type="password" name="password" placeholder="Пароль" >
+              <input type="submit" value="ВОЙТИ">
+            </form>
+            <a class="fogot-pass" href="#">Забыли пароль?</a>
+            <div class="socials">
+              <p>Войти с помощью:</p>
+              <ul>
+                <li><a href="#"><img src="images/ok.png" alt="odnoklassniki"></a></li>
+                <li><a href="#"><img src="images/vk.png" alt="vkontakte"></a></li>
+                <li><a href="#"><img src="images/Fb.png" alt="facebook"></a></li>
+              </ul>
+            </div>
+            <p>Еще нет аккаунта?</p>
+            <a class="button-reg" href="#">РЕГИСТРАЦИЯ</a>
+          </div>
+          <div class="account-modal__login registr">
+            <form action="#">
+              <input type="text" name="login" placeholder="Логин">
+              <input type="email" name="email" placeholder="E-mail">
+              <input type="password" name="password" placeholder="Пароль">
+              <label for="password">Не менее 6 символов</label>
+              <input type="password" name="confirm-assword" placeholder="Подтвердите пароль">
+              <div class="checkbox">
+                <input type="checkbox" name="checkbox" required >
+                <label for="checkbox">Я даю согласие 
+                  на <a href="#">обработку персональных данных</a></label>
+              </div>
+              <input class="reg-submit" type="submit" value="РЕГИСТРАЦИЯ">
+            </form>
           </div>
         </div>
       </div>
@@ -71,7 +111,54 @@
         <nav class="menu__topmenu">
           <div class="menu__wraper wrap">
             <ul>
-              <li><a class="menu__link" href="#">НОВИНКИ</a></li>
+              <li><a class="menu__link" href="#">НОВИНКИ</a>
+                <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div>
+              </li>
               <li><a class="menu__link" href="#">ОДЕЖДА</a>
                 <nav class="menu__submenu">
                   <div class="menu__submenu-wraper wrap">
@@ -120,65 +207,260 @@
                 </nav>
                 <div class="menu__submenu-darker"></div>
               </li>
-              <li><a class="menu__link" href="#">ОБУВЬ</a></li>
-              <li><a class="menu__link" href="#">СУМКИ</a></li>
-              <li><a class="menu__link" href="#">АКСЕССУАРЫ</a></li>
-              <li><a class="menu__link" href="#">МОДНЫЙ БЛОГ</a></li>
-              <li><a class="menu__link" href="#">SALE</a></li>
-            </ul>
-          </div>
-        </nav>
-        <nav class="menu__submenu">
-          <div class="menu__submenu-wraper wrap">
-            <ul class="menu__submenu-list list_2">
-              <li><a href="#">Джинсы</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
+              <li><a class="menu__link" href="#">ОБУВЬ</a>
+                <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div>
               </li>
-              <li><a href="#">Жакеты</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
+              <li><a class="menu__link" href="#">СУМКИ</a>
+                <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div>
               </li>
-              <li><a href="#">Пиджаки</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
+              <li><a class="menu__link" href="#">АКСЕССУАРЫ</a>
+                <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div>
               </li>
-              <li><a href="#">Юбки</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
+              <li><a class="menu__link" href="#">МОДНЫЙ БЛОГ</a>
+                <!-- <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div> -->
               </li>
-              <li><a href="#">Брюки</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Платья</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Жилеты</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Полуверы</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Блузы</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Пальто</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Куртки</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Топы</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
-              </li>
-              <li><a href="#">Футболки</a>
-                <figure><img src="images/menu-img.png" alt="category"></figure>
+              <li><a class="menu__link" href="#">SALE</a>
+                <!-- <nav class="menu__submenu">
+                    <div class="menu__submenu-wraper wrap">
+                      <ul class="menu__submenu-list">
+                        <li><a href="#">Джинсы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жакеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пиджаки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Юбки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Брюки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Платья</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Жилеты</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Полуверы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Блузы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Пальто</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Куртки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Топы</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                        <li><a href="#">Футболки</a>
+                          <figure><img src="images/menu-img.png" alt="category"></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                  <div class="menu__submenu-darker"></div> -->
               </li>
             </ul>
           </div>
         </nav>
       </nav>
+
+      <!---------- CONTENT -------------->
+
       <main>
-        <div class="top-banner">
-          <figure class="top-banner__wrap wrap">
-            <img src="images/banner1.png" alt="sale">
-          </figure>
+        <div class="top-banner wrap">
+          <a href="#">
+            <figure class="top-banner__wrap wrap">
+              <img src="images/banner1.png" alt="sale">
+            </figure>
+          </a>
         </div>
         <div class="second-banner">
           <div class="second-banner__wrap wrap">
@@ -243,7 +525,7 @@
               </div>
               <div class="blog__right">
                 <div class="blog__article blog__article--big">
-                  <h2>Новогодний дресс-код. 
+                  <h2>Новогодний дресс-код.
                     В чем встречать?</h2>
                   <figure>
                     <img src="images/blog.png" alt="trands">
@@ -274,6 +556,9 @@
         </section>
       </main>
     </div>
+
+    <!---------FOOTER--------------->
+
     <footer class="footer">
       <div class="footer__wrap wrap">
         <div class="footer__menu">
@@ -338,5 +623,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/menu.js"></script>
+  <script src="js/account.js"></script>
 </body>
 </html>
