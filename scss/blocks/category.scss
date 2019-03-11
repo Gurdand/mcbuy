@@ -13,6 +13,11 @@
         h1 {
             padding-bottom: 45px;
         }
+
+        h2 {
+            display: none;
+        }
+
     }
 
     .category__right {
@@ -38,6 +43,7 @@
 
     figure {
         max-width: 100%;
+        position: relative;
 
         img {
             max-width: 100%;
@@ -47,7 +53,7 @@
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px) {
-    .blog {
+    .category {
 
         h1 {
             font-size: 32px;
@@ -91,6 +97,12 @@
 
         .category__left {
             flex-basis: auto;
+
+            h2 {
+                display: block;
+                padding-bottom: 20px;
+                white-space: pre-line;
+            }
         }
 
         .category__right {

@@ -1,0 +1,46 @@
+.button-hover {
+    
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(255,255,255, 0.63);
+        opacity: 0;
+        z-index: 1;
+    }
+
+    &:hover {
+
+        &::before, .button-hover__btn {
+            opacity: 1;
+        }
+    }
+
+    .button-hover__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 160px;
+        background-color: $black;
+        text-decoration: none;
+        color: $white;
+        line-height: 50px;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        text-align: center;
+        z-index: 2;
+
+        &:hover {
+            background-color: $rose;
+        }
+
+    }
+
+}
